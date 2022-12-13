@@ -47,18 +47,29 @@
     border-radius: 4px;
     outline: transparent;
     padding-left: 30px;
+
     &:focus {
         border-color: var(--color-text-action);
-        }
+    }
+
     &:focus+.modal-icon {
         fill: var(--color-text-action);
-        }
-    &:focus:valid {
-        background-color: rgba(50, 180, 50, 0.255);
-        }
-    &:focus:invalid {
-        background-color: rgba(130, 62, 62, 0.255);
-        }
+    }
+
+    &:not(:focus):not(:placeholder-shown):valid {
+        background-color: hwb(120 0% 50% / 0.302);
+    }
+
+    &:not(:focus):not(:placeholder-shown):invalid {
+        background-color: rgba(128, 28, 0, 0.302);
+    }
+
+    &::placeholder {
+        @include font (400, 12px, 1.16, 0.01em);
+        color: rgba(117, 117, 117, 0.5);
+        font-family: 'Roboto';
+        font-style: normal;
+    }
 }
 
 .modal-icon {
@@ -85,10 +96,22 @@
 .modal-area {
     min-width: 448px;
     height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 16px;
     resize: none;
+    outline: transparent;
+
+    &:focus {
+        border: 1px solid #2196F3;
+        border-radius: 4px;
+    }
+
+    &::placeholder {
+        @include font (400, 12px, 1.16, 0.01em);
+        color: rgba(117, 117, 117, 0.5);
+        font-family: 'Roboto';
+        font-style: normal;
+    }
 }
 
 .check-text {
@@ -110,10 +133,11 @@
     background-image: url(/img/check-icon.svg);
     background-repeat: no-repeat;
     background-position: center;
-        width: 16px;
-            height: 15px;
-            border: 2px solid var(--color-text-first);
-            border-radius: 3px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--color-text-first);
+    border-radius: 3px;
+    
 }
 
 .check-input:focus+.check-text::before {
@@ -133,6 +157,7 @@
 .terms-agreement {
     margin-left: 5px;
 }
+
 .btn-flex {
     @include flex;
     justify-content: center;
@@ -184,6 +209,7 @@
     fill: var(--color-text-action);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
+
 .is-hidden {
     visibility: hidden;
     opacity: 0;
