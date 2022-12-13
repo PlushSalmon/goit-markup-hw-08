@@ -1,0 +1,39 @@
+.casket__list {
+    display: flex;
+    gap: 30px;
+}
+
+.casket__item {
+    width: calc((100% - 120px) / 4);
+    height: 120px;
+    background-color: var(--background-color-third);
+}
+
+.casket__link {
+    @include flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.advant {
+    padding-bottom: 0;
+}
+
+.text__list {
+    display: flex;
+    gap: 30px;
+}
+
+.casket__title {
+    @include font (null, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.casket__text {
+    @include font (null, null, 1.71, 0.03em);
+    max-width: 270px;
+    color: var(--color-text-second);
+}

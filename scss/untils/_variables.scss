@@ -1,0 +1,19 @@
+:root {
+    --color-text-first: #212121;
+    --color-text-second: #757575;
+    --color-text-action: #2196f3;
+    --color-text-third: rgba(255, 255, 255, 0.6);
+    --background-color-first: #ffffff;
+    --background-color-second: #2f303a;
+    --background-color-third: #f5f4fa;
+    --color-just-black: #000000;
+    --svg-color-noactive: #afb1b8;
+}
+
+body {
+    color: var(--color-text-first);
+    background-color: var(--background-color-first);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    margin: 0;
+}

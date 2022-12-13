@@ -1,0 +1,20 @@
+.wawd-list {
+    display: flex;
+    gap: 30px;
+}
+
+.wawd-botton-wrap {
+    position: relative;
+}
+
+.wawd-bottom-text {
+    @include font (700, 14px, 1.14, 0.03em);
+    color: var(--background-color-first);
+    background-color: rgba(47, 48, 58, 0.8);
+    font-family: 'Roboto';
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    padding: 27px 107px;
+}
