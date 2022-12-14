@@ -1,4 +1,5 @@
 .container {
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
@@ -6,24 +7,37 @@
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .container {
-    max-width: 768px;
+    width: 1200px;
   }
 }
 
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  @in;
+@media screen and (min-width: 480px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .visually-hidden {
@@ -204,25 +218,71 @@ img {
 
 .hero {
   background-color: var(--background-color-second);
+  text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/studio/hero-banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/studio/hero-banner.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/studio/hero-banner.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 204px;
+    padding-bottom: 204px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/studio/hero-banner.jpg);
+  }
+}
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   color: var(--background-color-first);
+  max-width: 360px;
   text-transform: uppercase;
   margin-bottom: 30px;
-  width: 696px;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    color: var(--background-color-first);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    color: var(--background-color-first);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--background-color-first);
+    max-width: 696px;
+  }
 }
 
 .hero__button {
@@ -237,16 +297,16 @@ img {
   border-radius: 4px;
   padding: 10px 32px;
   display: inline-block;
-  min-width: 216px;
+  min-width: 200px;
   border-color: transparent;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__button:hover, .hero__button:focus {
+  min-width: 200px;
   color: var(--color-text-first);
   background-color: var(--background-color-third);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
 .casket__list {
   display: flex;
   gap: 30px;
@@ -299,6 +359,15 @@ img {
   margin-bottom: 50px;
 }
 
+.wawd {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .wawd {
+    display: block;
+  }
+}
+
 .wawd-list {
   display: flex;
   gap: 30px;
@@ -323,19 +392,41 @@ img {
   padding: 27px 107px;
 }
 
-.team-list {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .team-list {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .team-item {
   background-color: var(--background-color-first);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team-item {
+    margin-bottom: 0;
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-item {
+    width: 270px;
+  }
 }
 
 .our-team-section {
   background-color: var(--background-color-third);
+  padding-top: 60px;
 }
 
 .team-title {
@@ -442,12 +533,20 @@ img {
 }
 
 .footer-logo {
+  margin-left: 163px;
+  margin-right: 163px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   font-family: Raleway, cursive;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 address {
@@ -469,24 +568,35 @@ address {
   font-style: normal;
   text-decoration: none;
 }
+.address-list {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .address-list {
+    text-align: left;
+  }
+}
 
 .footer-address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-text-third);
 }
-
-.container-footer {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    display: flex;
+  }
 }
 
 .address-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.container-footer-soc {
-  margin-left: 70px;
-  padding-top: 12px;
+@media screen and (min-width: 1200px) {
+  .container-footer-soc {
+    margin-left: 70px;
+    padding-top: 12px;
+  }
 }
 
 .footer-soc-title {
@@ -530,13 +640,19 @@ address {
 .footer-window-field {
   justify-content: center;
   align-items: center;
-  margin-left: 93px;
   padding-top: 12px;
 }
+@media screen and (min-width: 1200px) {
+  .footer-window-field {
+    margin-left: 93px;
+  }
+}
 
-.email-footer-wrap {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 1200px) {
+  .email-footer-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .email-footer-wrap label {
@@ -544,10 +660,12 @@ address {
   width: 100%;
 }
 
-.footer-input-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@media screen and (min-width: 1200px) {
+  .footer-input-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .label-footer {
@@ -585,6 +703,7 @@ address {
 }
 
 .btn-email-footer {
+  margin-top: 20px;
   display: flex;
   align-items: center;
   font-weight: 700;
@@ -607,7 +726,6 @@ address {
 .btn-email-footer:hover, .btn-email-footer:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
 .send-icon {
   justify-content: center;
   align-content: center;

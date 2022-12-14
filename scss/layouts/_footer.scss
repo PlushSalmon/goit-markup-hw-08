@@ -5,9 +5,16 @@
 }
 
 .footer-logo {
-    @include font (700, 26px, 1.19, 0.03em);
-    font-family: Raleway, cursive;
-    margin-bottom: 20px;
+    margin-left: 163px;
+    margin-right: 163px;
+        @include font (700, 26px, 1.19, 0.03em);
+        font-family: Raleway, cursive;
+        margin-bottom: 20px;
+    @include desctop {
+    margin-left: 0px;
+        margin-right: 0px;
+    }
+
 }
 
 address {
@@ -27,15 +34,28 @@ address {
     color: var(--background-color-first);
     font-style: normal;
     text-decoration: none;
-}
 
+    @include desctop {}
+
+}
+.address-list {
+            text-align: center;
+            @include desctop {
+                text-align: left;
+            }
+}
 .footer-address {
     @include font (null, null, 1.71, 0.03em);
     color: var(--color-text-third);
+    @include desctop {}
+
 }
 
 .container-footer {
-    display: flex;
+    @include desctop {
+        display: flex;
+    }
+
 }
 
 .address-item:not(:last-child) {
@@ -43,8 +63,11 @@ address {
 }
 
 .container-footer-soc {
-    margin-left: 70px;
+@include desctop {
+margin-left: 70px;
     padding-top: 12px;
+}
+    
 }
 
 .footer-soc-title {
@@ -72,9 +95,10 @@ address {
     background-color: rgba(255, 255, 255, 0.1);
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus {
-    background-color: var(--color-text-action);
+        background-color: var(--color-text-action);
     }
 }
 
@@ -85,13 +109,16 @@ address {
 .footer-window-field {
     justify-content: center;
     align-items: center;
-    margin-left: 93px;
+    @include desctop {margin-left: 93px;}
+    
     padding-top: 12px;
 }
 
 .email-footer-wrap {
-    display: flex;
-    flex-wrap: wrap;
+@include desctop {
+        display: flex;
+            flex-wrap: wrap;
+}
 }
 
 .email-footer-wrap label {
@@ -100,8 +127,11 @@ address {
 }
 
 .footer-input-box {
+
+@include desctop {
     @include flex;
     justify-content: space-between;
+}
 }
 
 .label-footer {
@@ -120,16 +150,20 @@ address {
     border-radius: 4px;
     padding-left: 16px;
     outline: transparent;
+
     &:focus {
-    border-color: var(--color-text-action);
+        border-color: var(--color-text-action);
     }
 }
+
 .input-footer {
     @include flex;
     @include font (400, 16px, 1.25, 0.03em);
     color: rgba(255, 255, 255, 0.6);
 }
+
 .btn-email-footer {
+        margin-top: 20px;
     @include flex;
     @include font (700, 16px, 1.87, 0.06em);
     width: 200px;
@@ -146,11 +180,14 @@ address {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    @include desctop {
         
-            }
+    }
 }
 
 .send-icon {
@@ -160,9 +197,9 @@ address {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        .btn-emai:hover &,
-        .btn-email-footer:focus &{
-            fill: var(--color-just-black);
-        }
-}
 
+    .btn-emai:hover &,
+    .btn-email-footer:focus & {
+        fill: var(--color-just-black);
+    }
+}

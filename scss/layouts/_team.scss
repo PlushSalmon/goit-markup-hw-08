@@ -1,6 +1,14 @@
 .team-list {
-    display: flex;
-    gap: 30px;
+    @include tablet {
+        flex-wrap: wrap;
+        display: flex;
+        gap: 30px;
+    }
+
+    @include desctop {
+        display: flex;
+        gap: 30px;
+    }
 }
 
 .team-item {
@@ -8,10 +16,19 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    margin-bottom: 30px;
+    @include tablet {
+        margin-bottom: 0;
+        width: 354px;
+    }
+    @include desctop {
+        width: 270px;
+    }
 }
 
 .our-team-section {
     background-color: var(--background-color-third);
+    padding-top: 60px;
 }
 
 .team-title {
@@ -49,6 +66,7 @@
     @include flex;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus {
         width: 100%;
@@ -60,13 +78,13 @@
 
 .team-soc-icon {
     fill: var(--svg-color-noactive);
+
     .team-soc-link:hover &,
     .team-soc-link:focus & {
-            fill: var(--background-color-first);
-        }
+        fill: var(--background-color-first);
+    }
 }
 
 .team-soc-link .team-soc-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-

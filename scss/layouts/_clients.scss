@@ -17,23 +17,23 @@
     align-items: center;
     justify-content: center;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus {
         border: 1px solid var(--color-text-action);
         border-radius: 4px;
-        }
+    }
+
     .clients-icon {
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
+    }
 }
 
 .clients-icon {
     fill: var(--svg-color-noactive);
+
     .clients-link:hover &,
     .clients-link:focus & {
         fill: var(--color-text-action);
-        }
+    }
 }
-
-
-

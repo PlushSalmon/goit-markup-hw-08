@@ -1,3 +1,10 @@
+.wawd {
+    display: none;
+    @include desctop {
+display: block;
+    }
+}
+
 .wawd-list {
     display: flex;
     gap: 30px;
