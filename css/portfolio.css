@@ -1,8 +1,43 @@
 .container {
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .visually-hidden {
@@ -276,12 +311,20 @@ img {
 }
 
 .footer-logo {
+  margin-left: 163px;
+  margin-right: 163px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   font-family: Raleway, cursive;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 address {
@@ -303,27 +346,46 @@ address {
   font-style: normal;
   text-decoration: none;
 }
+.address-list {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .address-list {
+    text-align: left;
+  }
+}
 
 .footer-address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-text-third);
 }
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    display: flex;
+  }
+}
 
-.container-footer {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .wrap-for-tablet {
+    display: flex;
+  }
 }
 
 .address-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.container-footer-soc {
-  margin-left: 70px;
-  padding-top: 12px;
+@media screen and (min-width: 1200px) {
+  .container-footer-soc {
+    margin-left: 70px;
+    padding-top: 12px;
+  }
 }
 
 .footer-soc-title {
+  text-align: center;
+  margin-top: 60px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -332,12 +394,31 @@ address {
   color: var(--background-color-first);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .footer-soc-title {
+    margin-top: 0;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc-title {
+    text-align: left;
+    margin-top: 0;
+  }
+}
 
 .footer-soc-list {
+  justify-content: center;
   display: flex;
   gap: 10px;
 }
-
+@media screen and (min-width: 768px) {
+  .footer-soc-list {
+    justify-content: center;
+    text-align: center;
+  }
+}
 .footer-soc-item {
   width: 44px;
   height: 44px;
@@ -364,13 +445,18 @@ address {
 .footer-window-field {
   justify-content: center;
   align-items: center;
-  margin-left: 93px;
   padding-top: 12px;
 }
-
-.email-footer-wrap {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 1200px) {
+  .footer-window-field {
+    margin-left: 93px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .email-footer-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .email-footer-wrap label {
@@ -378,10 +464,12 @@ address {
   width: 100%;
 }
 
-.footer-input-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@media screen and (min-width: 1200px) {
+  .footer-input-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .label-footer {
@@ -393,16 +481,34 @@ address {
   font-family: "Roboto";
   text-transform: uppercase;
   padding-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .label-footer {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .label-footer {
+    text-align: left;
+  }
 }
 
 .input-footer {
-  width: 358px;
+  margin: auto;
+  width: 300px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding-left: 16px;
   outline: transparent;
+}
+@media screen and (min-width: 768px) {
+  .input-footer {
+    width: 450px;
+    height: 50px;
+  }
 }
 .input-footer:focus {
   border-color: var(--color-text-action);
@@ -419,6 +525,7 @@ address {
 }
 
 .btn-email-footer {
+  margin-top: 20px;
   display: flex;
   align-items: center;
   font-weight: 700;
@@ -427,11 +534,12 @@ address {
   letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
+  margin: auto;
+  margin-top: 20px;
   border-radius: 4px;
   border-color: transparent;
   background-color: var(--color-text-action);
   justify-content: center;
-  margin-left: 12px;
   color: var(--background-color-first);
   font-family: "Roboto";
   padding: 10px 28px;
@@ -440,6 +548,12 @@ address {
 }
 .btn-email-footer:hover, .btn-email-footer:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 1200px) {
+  .btn-email-footer {
+    margin-left: 12px;
+    margin-top: 0;
+  }
 }
 
 .send-icon {

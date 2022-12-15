@@ -1,11 +1,23 @@
+.clients {
+    padding-bottom: 30px;
+}
+
 .clients-list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    @include desctop {
+        flex-wrap: nowrap;
+    }
 }
 
 .clients-item {
-    width: calc((100% - 150px) / 6);
+    width: calc((100% - 30px) / 2);
     height: 92px;
+    @include desctop {
+        width: calc((100% - 15px) / 6);
+        height: 92px;
+    }
 }
 
 .clients-link {

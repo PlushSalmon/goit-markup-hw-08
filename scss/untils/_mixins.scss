@@ -3,26 +3,32 @@
     display: flex;
     align-items: center;
 }
+
 @mixin font($fw, $fs, $fh, $ls) {
     font-weight: $fw;
     font-size: $fs;
     line-height: $fh;
     letter-spacing: $ls;
 }
+
 @mixin calc($count, $gap) {
     width: calc((100% - ($count - 1) * $gap) / $count);
 }
+
 // Adaptation
 @mixin mobile {
     @media screen and (min-width: 480px) {
         @content;
     }
 }
+
+
 @mixin tablet {
     @media screen and (min-width: 768px) {
         @content;
     }
 }
+
 @mixin desctop {
     @media screen and (min-width: 1200px) {
         @content;
