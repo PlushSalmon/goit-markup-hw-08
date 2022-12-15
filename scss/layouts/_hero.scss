@@ -4,25 +4,36 @@
     padding-top: 118px;
     padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../img/studio/hero-banner.jpg);
+        url(../img/studio-mobile/hero-banner-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
-    @include mobile {
+    @include retina {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../img/studio/hero-banner.jpg);
+            url(../img/studio-mobile/hero-banner-mobile-2x.jpg);
     }
 
     @include tablet {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../img/studio/hero-banner.jpg);
+            url(../img/studio-tablet/hero-banner-tablet.jpg);
+
+        @include retina {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../img/studio-tablet/hero-banner-tablet-2x.jpg);
+        }
     }
 
     @include desctop {
         padding-top: 204px;
         padding-bottom: 204px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../img/studio/hero-banner.jpg);
+            url(../img/studio-desctop/hero-banner-desctop.jpg);
+
+        @include retina {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../img/studio-desctop/hero-banner-desctop-x2.jpg);
+        }
     }
 }
 
@@ -76,6 +87,5 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
 
-    @include desctop{
-    }
+    @include desctop {}
 }

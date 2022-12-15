@@ -1,96 +1,122 @@
-.services {
+.advant {
+    padding-top: 60px;
+}
 
-    display: flex;
-    margin: -30px 0 0 -30px;
+.container-advant {
 
-    &__item {
-        display: flex;
-        flex-direction: column;
-        padding: 30px 0 0 30px;
-
-        .icon_wrapper {
-            padding: 25px 0;
-            background-color: var(--background-color-third);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .icon_container {
-                width: 70px;
-                height: 70px;
-
-                svg {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-
-        }
-
-        .title {
-            margin-top: 30px;
-            font-weight: 700;
-            line-height: 1.14;
-            font-size: 14px;
-            letter-spacing: 0.03em;
-        }
-
-        .text {
-            margin-top: 10px;
-            font-weight: 400;
-            line-height: 1.71;
-            font-size: 14px;
-            letter-spacing: 0.03em;
-
-        }
+    // width: 450px;
+    @include tablet {
+        width: 768px;
     }
 
+    @include desctop {
+        width: 1200px;
+    }
+}
 
+.advant-list {
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @include desctop {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+.advant-item {
+    @include tablet {
+        width: 354px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    @include desctop {}
+}
+
+.advant-item:not(:first-child) {
+    margin-top: 30px;
+
+    @include tablet {
+        margin-top: 0px;
+    }
+}
+
+.advant-wrap-icon {
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advant-title {
+    @include font (700, 14px, 1.71, 0.03em);
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #212121;
+
+    @include tablet {
+        text-align: left;
+    }
+}
+
+.advant-text {
+    @include font (400, 14px, 1.71, 0.03em);
+    margin-top: 10px;
+    color: #757575;
 }
 
 
 
-// .casket__list {
+// .services {
 //     display: flex;
-//     gap: 30px;
-//     flex-wrap: wrap;
-// }
+//     margin: -30px 0 0 -30px;
 
-// .casket__item {
-//     width: calc((100% - 30px) / 4);
-//     height: 120px;
-//     background-color: var(--background-color-third);
-//     @include flex;
-//     width: 100%;
-//     height: 100%;
-//     justify-content: center;
-// }
-// @include desctop {
-//         width: calc((100% - 120px) / 4);
-//             height: 120px;
+//     &__item {
+//         display: flex;
+//         flex-direction: column;
+//         padding: 30px 0 0 30px;
+
+//         .icon_wrapper {
+//             padding: 25px 0;
 //             background-color: var(--background-color-third);
-// }
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
 
-// .wrap-casket {
-//     width: 270px;
-//     height: 120px;
-// }
-// .casket__link {
-//     @include flex;
-//     width: 100%;
-//     height: 100%;
-//     justify-content: center;
-// }
+//             .icon_container {
+//                 width: 70px;
+//                 height: 70px;
 
-// .casket__title {
-//     @include font (null, 14px, 1.14, 0.03em);
-//     text-transform: uppercase;
-//     margin-bottom: 10px;
-//     margin-top: 30px;
-// }
+//                 svg {
+//                     width: 100%;
+//                     height: 100%;
+//                 }
+//             }
 
-// .casket__text {
-//     @include font (null, null, 1.71, 0.03em);
-//     max-width: 270px;
-//     color: var(--color-text-second);
+//         }
+
+//         .title {
+//             margin-top: 30px;
+//             font-weight: 700;
+//             line-height: 1.14;
+//             font-size: 14px;
+//             letter-spacing: 0.03em;
+//         }
+
+//         .text {
+//             margin-top: 10px;
+//             font-weight: 400;
+//             line-height: 1.71;
+//             font-size: 14px;
+//             letter-spacing: 0.03em;
+
+//         }
+//     }
 // }
