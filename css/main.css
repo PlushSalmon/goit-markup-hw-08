@@ -1081,14 +1081,14 @@ address {
   right: 50%;
   background-color: var(--background-color-first);
   border-radius: 4px;
-  width: 350px;
+  width: calc(100% - 60px);
   transform: translate(50%, -50%) scaleX(1);
   transition: transform 250ms linear;
   padding: 40px;
 }
 @media screen and (min-width: 480px) {
   .modal-window {
-    width: 450px;
+    width: 420px;
   }
 }
 @media screen and (min-width: 768px) {

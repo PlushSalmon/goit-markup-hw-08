@@ -14,13 +14,13 @@
     right: 50%;
     background-color: var(--background-color-first);
     border-radius: 4px;
-    width: 350px;
+    width: calc(100% - 60px);
     transform: translate(50%, -50%) scaleX(1);
     transition: transform 250ms linear;
     padding: 40px;
     @include mobile{
         // width: calc(100% - 30px);
-        width: 450px;
+        width: 420px;
     }
     @include tablet{
         width: 528px;
