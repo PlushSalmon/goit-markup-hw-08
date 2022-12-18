@@ -3,6 +3,9 @@
     @include desctop {
 display: block;
     }
+    @include desctop {
+        padding-top: 0;
+    }
 }
 
 .wawd-list {

@@ -30,7 +30,10 @@
     background-color: var(--background-color-third);
     padding-top: 60px;
 }
-
+.team-pictures {
+    display: block;
+    width: 100%;
+}
 .team-title {
     @include font (500, 16px, 1.19, 0.03em);
     display: flex;

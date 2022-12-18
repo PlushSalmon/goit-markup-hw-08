@@ -1,11 +1,10 @@
-.clients {
-    padding-bottom: 30px;
-}
-
 .clients-list {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    @include tablet {
+
+    }
     @include desctop {
         flex-wrap: nowrap;
     }
@@ -14,9 +13,12 @@
 .clients-item {
     width: calc((100% - 30px) / 2);
     height: 92px;
+        @include tablet {
+                width: calc((100% - 60px) / 3);
+        }
     @include desctop {
         width: calc((100% - 15px) / 6);
-        height: 92px;
+        
     }
 }
 

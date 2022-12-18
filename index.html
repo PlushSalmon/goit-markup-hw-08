@@ -49,7 +49,7 @@
         </svg>
       </button>
     </div>
-    <div class="mobile-menu" data-menu>
+    <div class="mobile-menu is-hidden" data-menu>
       <div class="container-mobile">
         <div class="mobile-menu-top">
           <button class="close-btn" type="button" data-menu-close>
@@ -58,9 +58,9 @@
             </svg>
           </button>
           <ul class="mobile_menu__list">
-            <li class="mobile_menu__item"><a class="mobile_menu__link current link" href="./index.html">Студія</a></li>
-            <li class="mobile_menu__item"><a class="mobile_menu__link link" href="./portfolio.html">Портфоліо</a></li>
-            <li class="mobile_menu__item"><a class="mobile_menu__link link" href="#">Контакти</a></li>
+            <li class="mobile_menu__item"><a class="mobile-menu-link link current" href="./index.html">Студія</a></li>
+            <li class="mobile_menu__item"><a class="mobile-menu-link link" href="./portfolio.html">Портфоліо</a></li>
+            <li class="mobile_menu__item"><a class="mobile-menu-link link" href="#">Контакти</a></li>
           </ul>
         </div>
         <div class="mobile-menu-bottom">
@@ -134,65 +134,6 @@
         </ul>
       </div>
     </section>
-    <!-- <section class="section advant">
-      <div class="container container__advant">
-        <h2 class="visually-hidden">Наші переваги</h2>
-        <ul class="services">
-          <li class="services__item">
-            <div class="icon_wrapper">
-              <div class="icon_container">
-                <svg class="advand-soc-icon">
-                  <use href="./img/icons.svg#icon-antenna"></use>
-                </svg>
-              </div>
-            </div>
-            <h3 class="title">Увага до деталей</h3>
-            <p class="text">
-              Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-            </p>
-          </li>
-          <li class="services__item">
-            <div class="icon_wrapper">
-              <div class="icon_container">
-                <svg class="advand-soc-icon" width="70px" height="70">
-                  <use href="./img/icons.svg#icon-clock"></use>
-                </svg>
-              </div>
-            </div>
-            <h3 class="title">Пунктуальність</h3>
-            <p class="text">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-            </p>
-          </li>
-          <li class="services__item">
-            <div class="icon_wrapper">
-              <div class="icon_container">
-                <svg class="advand-soc-icon" width="70px" height="70">
-                  <use href="./img/icons.svg#icon-diagram"></use>
-                </svg>
-              </div>
-            </div>
-            <h3 class="title">Планування</h3>
-            <p class="text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li class="services__item">
-            <div class="icon_wrapper">
-              <div class="icon_container">
-                <svg class="advand-soc-icon" width="70px" height="70">
-                  <use href="./img/icons.svg#icon-astronaut"></use>
-                </svg>
-              </div>
-            </div>
-            <h3 class="title">Сучасні технології</h3>
-            <p class="text">
-              Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section> -->
     <section class="section wawd">
       <div class="container">
         <h2 class="section-title">Чим ми займаємося</h2>
@@ -232,16 +173,14 @@
         <h2 class="section-title">Наша команда</h2>
         <ul class="team-list">
           <li class="team-item">
-            <picture>
+            <picture class="team-pictures">
               <source srcset="./img/studio-desctop/our-team-desctop/teammate-1-desctop.jpg 1x, 
              ./img/studio-desctop/our-team-desctop-x2/teammate-1-desctop-x2.jpg 2x" media="(min-width: 1200px">
               <source srcset="./img/studio-tablet/our-team-tablet/teammate-1-tablet.jpg 1x, 
              ./img/studio-tablet/our-team-tablet-2x/teammate-1-tablet-x2.jpg" media="(min-width: 768px">
               <source srcset="./img/studio-mobile/our-team-mobile/teammate-1-mobile.jpg 1x, 
              ./img/studio-mobile/our-team-mobile-2x/teammate-1-mobile-2x.jpg 2x" media="(max-width: 767px">
-              <img srcset="./img/studio-desctop/our-team-desctop/teammate-1-desctop.jpg 1x, 
-             ./img/studio-desctop/our-team-desctop-x2/teammate-1-desctop-x2.jpg 2px"
-                src="img/studio-desctop/our-team-desctop/teammate-1-desctop.jpg" alt="Фото Ігоря Дем'янченко"
+              <img src="img/studio-desctop/our-team-desctop/teammate-1-desctop.jpg" alt="Фото Ігоря Дем'янченко"
                 width="450" height="460" />
             </picture>
             <h3 class="team-title">Ігор Дем'яненко</h3>
@@ -278,7 +217,7 @@
             </ul>
           </li>
           <li class="team-item">
-            <picture>
+            <picture class="team-pictures">
               <source srcset="./img/studio-desctop/our-team-desctop/teammate-2-desctop.jpg 1x, 
                                      ./img/studio-desctop/our-team-desctop-x2/teammate-2-desctop-x2.jpg 2x"
                 media="(min-width: 1200px">
@@ -288,9 +227,7 @@
               <source srcset="./img/studio-mobile/our-team-mobile/teammate-2-mobile.jpg 1x, 
                                      ./img/studio-mobile/our-team-mobile-2x/teammate-2-mobile-2x.jpg 2x"
                 media="(min-width: 320px">
-              <img srcset="./img/studio-desctop/our-team-desctop/teammate-2-desctop.jpg 1x, 
-                                     ./img/studio-desctop/our-team-desctop-x2/teammate-2-desctop-x2.jpg 2px"
-                src="img/studio-desctop/our-team-desctop/teammate-2-desctop.jpg" alt="Фото Ігоря Дем'янченко"
+              <img src="img/studio-desctop/our-team-desctop/teammate-2-desctop.jpg" alt="Фото Ігоря Дем'янченко"
                 width="450" height="460" />
             </picture>
             <h3 class="team-title">Ольга Рєпіна</h3>
@@ -327,7 +264,7 @@
             </ul>
           </li>
           <li class="team-item">
-            <picture>
+            <picture class="team-pictures">
               <source srcset="./img/studio-desctop/our-team-desctop/teammate-3-desctop.jpg 1x, 
                                      ./img/studio-desctop/our-team-desctop-x2/teammate-3-desctop-x2.jpg 2x"
                 media="(min-width: 1200px">
@@ -337,9 +274,7 @@
               <source srcset="./img/studio-mobile/our-team-mobile/teammate-3-mobile.jpg 1x, 
                                      ./img/studio-mobile/our-team-mobile-2x/teammate-3-mobile-2x.jpg 2x"
                 media="(min-width: 320px">
-              <img srcset="./img/studio-desctop/our-team-desctop/teammate-3-desctop.jpg 1x, 
-                                     ./img/studio-desctop/our-team-desctop-x2/teammate-3-desctop-x2.jpg 2px"
-                src="img/studio-desctop/our-team-desctop/teammate-3-desctop.jpg" alt="Фото Ігоря Дем'янченко"
+              <img src="img/studio-desctop/our-team-desctop/teammate-3-desctop.jpg" alt="Фото Ігоря Дем'янченко"
                 width="450" height="460" />
             </picture>
             <h3 class="team-title">Микола Тарасов</h3>
@@ -376,7 +311,7 @@
             </ul>
           </li>
           <li class="team-item">
-            <picture>
+            <picture class="team-pictures">
               <source srcset="./img/studio-desctop/our-team-desctop/teammate-4-desctop.jpg 1x, 
                          ./img/studio-desctop/our-team-desctop-x2/teammate-4-desctop-x2.jpg 2x"
                 media="(min-width: 1200px">
@@ -518,9 +453,12 @@
             </li>
           </ul>
         </div>
+
+
+        
       </div>
-      <div class="footer-window-field">
-        <form>
+      
+        <form class="footer-window-field">
           <div class="email-footer-wrap">
             <label class="label-footer" for="input-footer">Підпишіться на розсилку</label>
             <div class="footer-input-box">
@@ -531,7 +469,7 @@
             </div>
           </div>
         </form>
-      </div>
+      
     </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
@@ -574,10 +512,10 @@
           </div>
         </div>
         <div class="modal-field">
-          <label class="modal-label-text" for="user-comment">Коментар</label>
-          <div class="input-wrap">
-            <textarea class="modal-area" name="user-comment" id="user-comment" placeholder="Введіть текст"></textarea>
-          </div>
+          <label class=" modal-label-text " for="user-comment">Коментар</label>
+
+          <textarea class=" modal-area" name="user-comment" id="user-comment" placeholder="Введіть текст"></textarea>
+
         </div>
         <div class="modal-field">
           <input class="check-input visually-hidden" id="privacy" type="checkbox" name="privacy" />
