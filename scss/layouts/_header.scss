@@ -4,14 +4,16 @@
 
 .header__container {
     display: flex;
+    
 }
 
 .header__logo {
-    @include font (700, 26px, 1.19, 0.03em);
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
-    font-family: Raleway, cursive;
+    // @include font (700, 26px, 1.19, 0.03em);
+    // padding-top: 24px;
+    // padding-bottom: 25px;
+    // margin-right: 93px;
+    // font-family: Raleway, cursive;
+    @include font (700, 24px, 1.16, 0.03em);
 }
 
 .first-part-hlogo {
@@ -139,12 +141,9 @@
     margin-bottom: auto;
 }
 .open-btn {
-    width: 40px;
-    height: 40px;
     background-color: transparent;
     border: none;
     padding: 0;
-    margin-left: auto;
     @include tablet {
             display: none;
         }
