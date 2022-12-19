@@ -1,7 +1,6 @@
 .backdrop {
     position: fixed;
     top: 0;
-    right: 0;
     width: 100%;
     height: 100%;
     background-color: #00000033;
@@ -19,8 +18,8 @@
     transition: transform 250ms linear;
     padding: 40px;
     @include mobile{
-        // width: calc(100% - 30px);
-        width: 420px;
+        width: 450px;
+        max-height: calc(100vh - 30px);
     }
     @include tablet{
         width: 528px;
