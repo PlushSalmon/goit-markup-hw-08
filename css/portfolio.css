@@ -393,24 +393,13 @@ img {
   margin-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .mobile-soc-item {
     font-family: "Roboto";
     font-weight: 500;
     font-size: 18px;
     line-height: 1.2222222222;
     letter-spacing: 0.02em;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .mobile-soc-item {
-    color: #2196F3;
-    font-family: "Roboto";
-    padding-right: 20px;
-  }
-  .mobile-soc-item:not(:last-child) {
-    margin-right: 20px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
 

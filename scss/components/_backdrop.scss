@@ -13,15 +13,18 @@
     right: 50%;
     background-color: var(--background-color-first);
     border-radius: 4px;
-    width: calc(100% - 60px);
+    width: calc(100% - 30px);
     transform: translate(50%, -50%) scaleX(1);
     transition: transform 250ms linear;
     padding: 40px;
-    @include mobile{
+    box-sizing: border-box;
+
+    @include mobile {
         width: 450px;
         max-height: calc(100vh - 30px);
     }
-    @include tablet{
+
+    @include tablet {
         width: 528px;
     }
 }
@@ -31,10 +34,17 @@
 }
 
 .modal-title {
-    @include font (700, 20px, 1.15, 0.03em);
+    @include font (50, 15px, 1.14, 0.03em);
     font-family: 'Roboto';
     text-align: center;
     margin-bottom: 12px;
+
+    @include mobile {
+        @include font (700, 20px, 1.15, 0.03em);
+        font-family: 'Roboto';
+        text-align: center;
+        margin-bottom: 12px;
+    }
 }
 
 .modal-field {
@@ -100,9 +110,9 @@
 }
 
 .modal-area {
-   width: 100%;
-   box-sizing: border-box;
-        border: 1px solid rgba(33, 33, 33, 0.2);
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(33, 33, 33, 0.2);
     height: 120px;
     border-radius: 4px;
     padding: 12px 16px;
@@ -124,10 +134,14 @@
 
 .check-text {
     @include flex;
-    @include font (400, 14px, 1.71, 0.03em);
+    @include font (400, 12px, 1.61, 0.03em);
     font-family: 'Roboto';
     font-style: normal;
     justify-content: center;
+
+    @include desctop {
+        @include font (400, 14px, 1.71, 0.03em);
+    }
 }
 
 .check-text .terms-agreement {
@@ -138,14 +152,14 @@
 .check-input:checked+.check-text::before {
     background-color: var(--color-text-action);
     border: none;
-    background-image: url(/img/check-icon.svg);
+    background-image: url(../img/check-icon.svg);
     background-repeat: no-repeat;
     background-position: center;
     width: 16px;
     height: 15px;
     border: 2px solid var(--color-text-first);
     border-radius: 3px;
-    
+
 }
 
 .check-input:focus+.check-text::before {
