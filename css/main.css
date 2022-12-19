@@ -610,10 +610,7 @@ img {
 .wawd-list {
   display: flex;
   justify-content: center;
-}
-
-.wawd-item + .wawd-item {
-  margin-left: 30px;
+  gap: 30px;
 }
 
 .wawd-botton-wrap {
