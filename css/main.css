@@ -609,7 +609,11 @@ img {
 
 .wawd-list {
   display: flex;
-  gap: 30px;
+  justify-content: center;
+}
+
+.wawd-item + .wawd-item {
+  margin-left: 30px;
 }
 
 .wawd-botton-wrap {
