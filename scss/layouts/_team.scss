@@ -3,6 +3,7 @@
         flex-wrap: wrap;
         display: flex;
         gap: 30px;
+        justify-content: center;
     }
 
     @include desctop {
